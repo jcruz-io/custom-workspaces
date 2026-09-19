@@ -11,18 +11,18 @@ BarWidget {
   // Nerd Font glyphs for workspaces 1..10. Codepoints above U+FFFF are written
   // as UTF-16 surrogate pairs. Override with an "icons" array in shell.json.
   readonly property var defaultIcons: [
-    "",        //  1  nf-fa-chrome
-    "󰟀",  //  2  U+F07C0
-    "󰒋",  //  3  U+F048B
-    "󰇥",  //  4  U+F01E5
-    "",        //  5  U+F14B
-    "",        //  6  nf-fa-folder
-    "󰅶",  //  7  U+F0176
-    "",        //  8  nf-fa-video_camera
-    "󰃖",  //  9  U+F00D6
-    ""         // 10  nf-fa-comments
+    "  ",
+    " 󰟀 ",
+    " 󰒋 ",
+    " 󰇥 ",
+    "  ",
+    "  ",
+    " 󰅶 ",
+    "  ",
+    " 󰃖 ",
+    "  "
   ]
-  readonly property string defaultActiveIcon: ""
+  readonly property string defaultActiveIcon: "  "
 
   readonly property var icons: root.setting("icons", root.defaultIcons)
   readonly property string activeIcon: root.setting("activeIcon", root.defaultActiveIcon)
